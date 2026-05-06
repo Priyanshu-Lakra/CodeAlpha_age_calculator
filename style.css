@@ -1,0 +1,73 @@
+:root {
+  --bg: #f4f4f4;
+  --text: #222;
+  --card: #ffffff;
+  --btn: #667eea;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --card: #1e1e1e;
+  --btn: #9f7aea;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.container {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background: var(--btn);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#themeToggle {
+  width: auto;
+  padding: 5px 10px;
+}
+
+.result, .extra, .countdown {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+}
